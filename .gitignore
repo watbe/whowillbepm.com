@@ -37,3 +37,6 @@ nosetests.xml
 # I HATE THIS MAC STUFF
 .DS_Store
 ._.DS_Store
+
+credentials.csv
+config.json
