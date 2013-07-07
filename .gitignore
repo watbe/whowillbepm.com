@@ -38,5 +38,7 @@ nosetests.xml
 .DS_Store
 ._.DS_Store
 
+# Security stuff so I don't show everyone how to access the website!
 credentials.csv
 config.json
+s3_website.yml

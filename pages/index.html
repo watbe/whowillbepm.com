@@ -1,4 +1,43 @@
 {% extends "base.html" %}
 {% block content %}
-Welcome to Cactus!
+<div id="page">
+	<div class="line full"></div>
+	<h1>Who will be PM</h1>
+	<div class="subtitle">
+		<div class="title com">
+			<span>.com</span>
+		</div>
+		<div class="line under"></div>
+	</div>
+
+	<h2>Australian Federal Election 2013</h2>
+
+	<section id="candidates">
+	<div class="pollie alp">
+		<img src="/static/img/rudd.png" alt="Kevin Rudd"/>
+		<span class="name">Kevin Rudd</span>
+	</div>
+
+	<div class="vs">
+		<div class="line full"></div>
+		<span>versus</span>
+		<div class="line full"></div>
+	</div>
+
+	<div class="pollie lnp">
+		<img src="/static/img/abbott.png" alt="Tony Abbott"/>
+		<span class="name">Tony Abbott</span>
+	</div>
+
+        <div class="clearfix"></div>	
+	</section>
+
+<!--	<ul>
+		<li datetime="2013-07-04">	
+			<span class="alp">Rudd <span class="2pp">54.0</span></span>
+			<span class="lnp">Abbott<span class="2pp">46.0</span></span>
+			<span class="date">July 4</span></li>
+		</ul>
+-->
+</div>
 {% endblock %}
