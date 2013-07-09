@@ -1,0 +1,292 @@
+$alp: #CE0000;
+$lnp: #0074CE;
+$sans-serif: "nimbus-sans", "Arial Narrow", "DinPro", Arial, sans-serif;
+$serif: "museo-slab", "rockwell", "courier new", monospace;
+
+body {
+	font: 14px $serif;
+	background: url("../img/bg.png") repeat scroll 50% 0 #222222;
+	color: #fff;
+}
+
+#page {
+	max-width: 700px;
+	margin: 0 auto;
+	position:relative;
+}
+
+.line, .subtitle,
+h1, h2, h3, .vs {
+	font-family: $serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 5em;
+	margin: 0.1em;
+	font-weight: 900;
+	text-shadow: 0 5px #000;
+	text-align: center;
+}
+
+h2 {
+	color: #999;
+	text-align: center;
+	margin-top: 1.3em;
+	font-size: 1.7em;
+	text-shadow: 0 2px 0 #000;
+}
+
+.title.com {
+	font-size: 2em;
+	text-shadow: 0 4px #000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: -0.5em 0;
+	span {
+		background: url("../img/bg.png") repeat scroll 50% 0 #222222;
+		padding: 0 1em;
+	}
+}
+
+.line {
+	background: url("../img/line.png") repeat-x scroll 0 0;
+	height: 6px;
+	width: 100%;
+
+	&.full {
+		margin-top: 2em;
+	}
+
+	&.under {
+		margin-top: -1.2em;
+	}
+}
+
+div.section {
+	position:relative;
+	margin-top: 80px;	
+}
+
+.alp img {
+	border: 5px solid $alp;
+}
+
+.lnp img {
+	border: 5px solid $lnp;
+}
+
+.vs {
+	font-size: 1.6em;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 4px #000;
+	width: 100px;
+	float: left;
+	margin: 0 auto;
+	position: absolute;
+	margin-left: -50px;
+	left: 50%;
+	top: 70px;
+
+	span {
+		display: block;
+		margin: 0.2em 0;
+		font-weight: 900;
+	}
+
+	.line.full {
+		margin: 0;
+	}
+}
+
+.pollie {
+	width: 184px;
+
+	&.alp {
+		float:left;
+		margin-left: 2em;
+	}
+
+	&.lnp {
+		float:right;
+		margin-right: 2em;
+	}
+	
+	span.name {
+		font-family: $sans-serif;
+		font-size: 2.4em;
+		width: 100%;
+		display:block;
+		text-align: center;
+		margin-top: 0.3em;
+	}	
+}
+
+.clearfix {
+	clear:both;
+}
+
+div.section .subtitle {
+	text-align: center;
+	margin-top: 5em;
+	text-shadow: 0 4px #000;
+
+	span {
+		color: #fff;
+		text-transform: uppercase;
+		background: url("../img/bg.png") repeat scroll 50% 0 #222222;
+		padding: 0 1em;
+		font-size: 2.3em;
+		position:relative;
+	}
+}
+
+div.section .line.under {
+		margin-top: -1.5em;
+}
+
+.number-wrapper {
+
+	&.alp {
+		color: $alp;
+		float:left;
+	}
+
+	&.lnp {
+		color: $lnp;
+		float: right;
+		
+		.party-name, .change, .major-stat {
+			float:right;
+			margin-left: 10px;
+		}
+	}
+
+	width: 250px; 
+	
+	.major-stat {
+		text-shadow: 0 5px #000;
+		float:left;
+		font-size: 6em;
+	}
+
+	.party-name {
+		clear:left;
+		font-family: $sans-serif;
+		color: #fff;
+		font-size: 2em;
+	}
+
+	.change {
+		text-shadow: 0 3px #000;
+		font-size: 2em;
+		color: #666;
+	}
+}
+
+.projected-pm {
+	
+	margin-top: 4em;
+
+	.name {
+		font-size: 6em;
+		display:block;
+		text-align: center;
+		text-shadow: 0 5px #000;
+
+		&.alp {
+			color: $alp;
+		}
+
+		&.lnp {
+			color: $lnp;
+		}
+	}
+
+	.party {
+		font-family: $sans-serif;
+		display:block;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	margin-bottom: 4em;
+}
+
+.section#breakdown {
+	.subtitle {
+		margin-bottom: 4em;
+	}
+}
+
+table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	th {
+		color: #FFDE00;
+	}
+}
+
+a, a:link, a:active {
+	color: #FFDE00;
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+a.standalone {
+	text-align:center;
+	display:block;
+	margin: 1em 0;
+	font-size: 1.5em;
+}
+
+#page.about {
+	p {
+		font-family: $sans-serif;
+		width: 80%;
+		margin: 1em auto;
+		line-height: 1.4em;
+		font-size: 1.1em;
+	}
+	
+	.section, .section .subtitle {
+		margin: 2em 0;
+	}
+}
+
+.fb-like {
+	margin-left: -40px;
+	margin-top: -20px;
+	position: absolute !important;
+	left: 50%;
+}
+
+@media all and (max-width: 599px) {
+	
+	#page .pollie {
+		float:none !important;
+		margin: 0 auto !important;
+	}
+	
+	#page .vs {
+		float: none;
+		margin: 2em auto;
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+
+	div.section .subtitle span {
+		padding: 0 2px;
+	}
+
+	.number-wrapper {
+		float: none !important;
+		margin: 2em auto;
+	}
+
+}
